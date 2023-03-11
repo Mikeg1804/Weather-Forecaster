@@ -7,17 +7,18 @@ var requestUrl = 'api.openweathermap.org/data/2.5/forecast?&appid=4fb2c1c17b8775
 
 
 
-let citySearch = searchEl.addEventListener("click",function(){
-  console.log(textSearchEl.value)
- return textSearchEl.value
+var citySearch;
 
-    })
+searchEl.addEventListener("click",function(){
+  citySearch = textSearchEl.value;
+  // console.log(citySearch)
+    });
 
 console.log(citySearch)    
 
 var requestLocation = 'http://api.openweathermap.org/geo/1.0/direct?q=' +citySearch+ '&limit=4fb2c1c17b8775d8bd78a36c089c1827';
 
-console.log(requestLocation)
+// console.log(requestLocation)
 
 function getApi(requestLocation) {
     fetch(requestLocation) 
