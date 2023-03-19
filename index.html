@@ -15,42 +15,45 @@
 
     <div>Search for a City <input id="citySearch" type="text"></div>
     <button id="searchBtn">Search</button>
-    <div id="topCity1Container"></div>
-    <div id="topCity2Container"></div>
-    <div id="topCity3Container"></div>
+
+    <div id="history"> 
+        <h5>Historical Searches</h5> </div>
+    <div id="topCityContainer"></div>
+    <!-- <div id="topCity3Container"></div>
     <div id="topCity4Container"></div>
     <div id="topCity5Container"></div>
     <div id="topCity6Container"></div>
     <div id="topCity7Container"></div>
-    <div id="topCity8Container"></div>
+    <div id="topCity8Container"></div>  -->
     <div id="selectedCityContainer"></div>
 
-    <section class="container my-5 bg-dark text-light"> Current Temperature
+    <section class="container my-4 bg-dark text-light"> Current Temperature:
      <div id="currentDay"></div>
      <div id="currentDate"></div>   
     <div id="currentTemperature"></div>
     </section>
 
-    <section class="container my-5 bg-dark text-light"> 5-day forecast
+    <section id = "future" class="container my-4 bg-dark text-light"> 5-day forecast
 
      <div class="row">
-        <div class="col-6" id="fivedayContainer">
+
+        <div class="col-6 " id="futureDateContainer"> Forecast Dates
+        </div> 
+        <div class="col-6" id="fivedayContainer"> Forecasted Temperature
         </div>
 
-        <div class="col-6 " id="futureDateContainer"> 
-     </div> 
      </div>        
 
     </section>
   <!-- Added link to the jQuery library -->
 
   <!--col-md-6 col-lg-2-->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-  <script type="text/javascript" src="./assets/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script
   src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
   integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
   crossorigin="anonymous"
 ></script>
+<script type="text/javascript" src="./assets/script.js"></script>
 </body>
 </html>
